@@ -158,16 +158,16 @@
  * Это позволяет переносить устройство из одного здания в другое, не перепрошивая и перенастраивая его. 
  * Просто заранее определите все возможные сети.
  * */
-#define CONFIG_WIFI_1_SSID "WIFI1"
-#define CONFIG_WIFI_1_PASS "000000000"
-#define CONFIG_WIFI_2_SSID "WIFI2"
-#define CONFIG_WIFI_2_PASS "111111111"
-#define CONFIG_WIFI_3_SSID "WIFI3"
-#define CONFIG_WIFI_3_PASS "222222222"
-#define CONFIG_WIFI_4_SSID "WIFI4"
-#define CONFIG_WIFI_4_PASS "333333333"
+#define CONFIG_WIFI_1_SSID "Homyak"
+#define CONFIG_WIFI_1_PASS "p@ndA2337ooo6"
+#define CONFIG_WIFI_2_SSID "Suburban_ext"
+#define CONFIG_WIFI_2_PASS "p@nda661644"
+#define CONFIG_WIFI_3_SSID "Suburban"
+#define CONFIG_WIFI_3_PASS "0102030405"
+#define CONFIG_WIFI_4_SSID "simple_point"
+#define CONFIG_WIFI_4_PASS "0102030405"
 #define CONFIG_WIFI_5_SSID "WIFI5"
-#define CONFIG_WIFI_5_PASS "444444444"
+#define CONFIG_WIFI_5_PASS "012345678"
 
 // EN: WiFi connection parameters. Commenting out these lines will use the default ESP-IDF parameters
 // RU: Параметры WiFi подключения. Если закомментировать эти строки, будут использованы параметры по умолчанию ESP-IDF
@@ -275,8 +275,8 @@
 #define CONFIG_OPENMON_SEND_INTERVAL 300
 // EN: Controller ids and tokens for open-monitoring.online
 // RU: Идентификаторы контроллеров и токены для open-monitoring.online
-#define CONFIG_OPENMON_CTR01_ID 2198
-#define CONFIG_OPENMON_CTR01_TOKEN "3W3aYt"
+#define CONFIG_OPENMON_CTR01_ID 2234
+#define CONFIG_OPENMON_CTR01_TOKEN "YXBNBn"
 // EN: Allow publication of ping results и системной информации on open-monitoring.online
 // RU: Разрешить публикацию результатов пинга и системной информации на open-monitoring.online
 #define CONFIG_OPENMON_PINGER_ENABLE 1
@@ -297,7 +297,7 @@
 
 // EN: Enable sending data to narodmon.ru
 // RU: Включить отправку данных на narodmon.ru
-#define CONFIG_NARODMON_ENABLE 1
+#define CONFIG_NARODMON_ENABLE 0
 #if CONFIG_NARODMON_ENABLE
 // EN: Frequency of sending data in seconds
 // RU: Периодичность отправки данных в секундах
@@ -312,7 +312,7 @@
 // -----------------------------------------------------------------------------------------------------------------------
 // EN: Enable sending data to thingspeak.com
 // RU: Включить отправку данных на thingspeak.com
-#define CONFIG_THINGSPEAK_ENABLE 1
+#define CONFIG_THINGSPEAK_ENABLE 0
 #if CONFIG_THINGSPEAK_ENABLE
 // EN: Frequency of sending data in seconds
 // RU: Периодичность отправки данных в секундах
@@ -340,11 +340,11 @@
 #define CONFIG_TELEGRAM_ENABLE 1
 // EN: Telegram API bot token
 // RU: Токен бота API Telegram
-#define CONFIG_TELEGRAM_TOKEN "7271238860:5TT9VrUmL33INA-AAEVmwj_w25usmWvdjaE"
+#define CONFIG_TELEGRAM_TOKEN "882717145:AAF1MVrSLrdpnfSBdwK7edHneEs_4iIlAZo"
 // EN: Chat or group ID
 // RU: Идентификатор чата или группы
-#define CONFIG_TELEGRAM_CHAT_ID_MAIN     "-572534150"
-#define CONFIG_TELEGRAM_CHAT_ID_SERVICE  "-1009183247562"
+#define CONFIG_TELEGRAM_CHAT_ID_MAIN     "420515519"
+#define CONFIG_TELEGRAM_CHAT_ID_SERVICE  "-899850252"
 #define CONFIG_TELEGRAM_CHAT_ID_PARAMS   CONFIG_TELEGRAM_CHAT_ID_SERVICE
 #define CONFIG_TELEGRAM_CHAT_ID_SECURITY CONFIG_TELEGRAM_CHAT_ID_MAIN
 // EN: Send message header (device name, see CONFIG_TELEGRAM_DEVICE)
@@ -452,7 +452,7 @@
 #define CONFIG_WIFI_DEBUG_ENABLE 0
 // EN: Allow periodic publication of system information
 // RU: Разрешить периодическую публикацию системной информации
-#define CONFIG_MQTT_SYSINFO_ENABLE 1
+#define CONFIG_MQTT_SYSINFO_ENABLE 0
 #define CONFIG_MQTT_SYSINFO_INTERVAL 1000*60*5
 #define CONFIG_MQTT_SYSINFO_SYSTEM_FLAGS 1           
 // EN: Allow periodic publication of task information. CONFIG_FREERTOS_USE_TRACE_FACILITY / configUSE_TRACE_FACILITY must be allowed

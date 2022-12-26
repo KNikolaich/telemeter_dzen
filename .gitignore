@@ -4,3 +4,4 @@ configs/
 *.code-workspace
 *.log
 
+include/project_config.h

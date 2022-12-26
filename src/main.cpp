@@ -19,7 +19,7 @@
 #include "reEsp32.h"
 #include "reWiFi.h"
 #include "reSNTP.h"
-#include "reMQTT.h"
+// #include "reMQTT.h"
 #include "reSysInfo.h"
 #include "reScheduler.h"
 #include "reI2C.h"
@@ -102,9 +102,9 @@ extern "C" { void app_main(void)
   sntpTaskCreate(true);
   vTaskDelay(1);
 
-  // Запуск и регистрация MQTT слиента
-  mqttTaskStart(true);
-  vTaskDelay(1);
+  // // Запуск и регистрация MQTT слиента
+  // mqttTaskStart(true);
+  // vTaskDelay(1);
 
   // Регистрациция обработчиков событий для параметров
   paramsEventHandlerRegister();
